@@ -1,0 +1,18 @@
+{
+     "manifest_version": 2,
+
+     "name": "Youtube Ads Skip by Adarsh",
+     "description": "Youtube Ads Skip by Adarsh",
+     "version": "1.0",
+
+     "content_scripts": [{
+          "js":["scripts.js"],
+          "run_at": "document_idle",
+          "matches":["<all_urls>"]
+     }],
+
+     "permissions": [
+          "tabs",
+          "activeTab"
+     ]
+}
